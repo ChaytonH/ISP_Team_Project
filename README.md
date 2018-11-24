@@ -1,6 +1,6 @@
 # ISP_Team_Project Names and ID's
 
-[Submission.html NAMES and ID’s]
+[Submission.html]
 ------------------------------------------------------------------------------------------------------------------------------
 
 Video Title (Form Input):
@@ -16,13 +16,13 @@ id="Upload"
 Video Search Bar (Input):
 	id = "search bar"
 
-[Video Storage.html NAMES and ID’s]
+[Video Storage.html]
 ------------------------------------------------------------------------------------------------------------------------------
 
 Video Search Bar (Input):
 	id = "search bar"
 
-[resultex.html NAMES and ID’s]
+[resultex.html]
 ------------------------------------------------------------------------------------------------------------------------------
 
 Video Search Bar (Input):
