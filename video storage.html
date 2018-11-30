@@ -56,6 +56,36 @@
         <td>I thought this was neat.</td>
 		<td><button onclick="">Dummy</button></td>
     </tr>
+	<?php
+	
+		$db = mysqli_connect("db1.cs.uakron.edu:3306", "dlc190", "passwordlol");
+
+		if (!$db) 
+		{
+     		print "Error - Could not connect to MySQL";
+     		exit;
+		}
+
+		$er = mysqli_select_db($db,"ISP_dlc190");
+		if (!$er) 
+		{
+    		print "Error - Could not select the database";
+    		exit;
+		}	
+		
+		$qu = "SELECT * FROM Videos";
+		$result = mysqli_query($db, $qu);
+		
+		echo "<table border='1' style='width:100%'>";
+		
+		while($row = mysqli_fetch_array($result))
+		{
+			echo "<tr><td><audio controls='controls'> <source src='Test Contents\atest.mp3'> Your browser does not support the audio element</audio></td><td>" . $row['Name'] . "</td><td>" . $row['Descript'] . "</td></tr>";
+		}
+		echo "</table>";
+		
+		
+		?>
 		
   </body>
 </html>
