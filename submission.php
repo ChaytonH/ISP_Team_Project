@@ -39,6 +39,9 @@ if(isset($_POST['Upload']))
 
 <!DOCTYPE html>
 
+<link rel = "stylesheet"  type = "text/css"
+         	 href = "styles.css" />
+
 <html lang = "en">
   <head>
     <title> Upload Page </title>
@@ -67,6 +70,6 @@ if(isset($_POST['Upload']))
 	
 	</form>
 	
-		<div style = "text-align:center"><button onclick="window.location.href='video storage.html'" >Return to Homepage</button></div>	
+		<div style = "text-align:center"><button onclick="window.location.href='video storage.php'" >Return to Homepage</button></div>	
   </body>
 </html>
