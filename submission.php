@@ -51,7 +51,8 @@ if(isset($_POST['Upload']))
   	<div style = " z-index : 1; text-align:center; background-color:white; position: -webkit-sticky; position: sticky; top: 0; ">
 		<img width = "100" src = "Page Essentials\logo.jpg"></img>
 		<input size = "50" id = "search bar" />
-		<button onclick="">Search</button> <!-- Make this point to a function that takes the input and finds it from our database -->
+		<button onclick="">Search</button> 
+		<a href = "instructions.html">Online Help</a><!-- Make this point to a function that takes the input and finds it from our database -->
 	</div>
 	
 	<h2 style = "text-align:center"> Upload A Video </h2>

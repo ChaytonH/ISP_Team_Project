@@ -14,6 +14,7 @@
 		<input size = "50" id = "search bar" />
 		<button onclick="">Search</button> <!-- Make this point to a function that takes the input and finds it from our database -->
 		<a href = "instructions.html">Online Help</a>
+		<a href = "technical doc.html">Technical Docs</a>
 	</div>
 	
 	<a href = "resultex.html">Link to example search results</a>
