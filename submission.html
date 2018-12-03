@@ -8,39 +8,39 @@
   <body style =" background-color:lightgrey;">
   	<div style = " z-index : 1; text-align:center; background-color:white; position: -webkit-sticky; position: sticky; top: 0; ">
 		<img width = "100" src = "Page Essentials\logo.jpg"></img>
-		<input size = "50" id = "search bar" />
+        <input size = "50" id = "search bar" />
 		<button onclick="">Search</button> <!-- Make this point to a function that takes the input and finds it from our database -->
 	</div>
-	
+
 	<h2 style = "text-align:center"> Upload A Video </h2>
-	
+
 	<h3> File </h3>
-	
+
 	<p> Put the upload area here </p>
-	
+
 	<h3> Title </h3>
-	
+
 	<form action="submit.php" method="post" enctype="multipart/form-data">
-			
+
 		<input type="file" name = "title" /><br/>
-		
+
 		<h3> Description </h3>
-		
+
 		<input name = "description" /><br/><br/>
-	
+
 	<input type="submit" name="Upload" id="Upload" value="Upload" />
-	
+
 	</form>
-	
+
 		<div style = "text-align:center"><button onclick="window.location.href='video storage.html'" >Return to Homepage</button></div>
 
-	
-	
-	
-	
-	
-		
-	
-	
+
+
+
+
+
+
+
+
   </body>
 </html>

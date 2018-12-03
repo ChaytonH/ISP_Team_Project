@@ -12,14 +12,16 @@
   <body style =" background-color:lightgrey;">
 	<div style = " z-index : 1; text-align:center; background-color:white; position: -webkit-sticky; position: sticky; top: 0; ">
 		<img width = "100" src = "Page Essentials\logo.jpg"></img>
-		<input size = "50" id = "search bar" />
-		<button onclick="">Search</button> 
+        <form method="get" action="resultex.php">
+            <input size = "50" name = "searchbar" />
+    		<input type="submit" > <!-- Make this point to a function that takes the input and finds it from our database -->
+        </form>
 		<a href = "instructions.html">Online Help</a><!-- Make this point to a function that takes the input and finds it from our database -->
 	</div>
-	
+
 	<h2 style = "text-align: center;"> Online Help</h2>
-	
-	
+
+
 	<h4 style = "text-align: center;"> Navigating the Homepage an Searching</h4>
 	<p>The homepage for this site allows you to view the videos that have been uploaded in a table going down the page. If you would like to search for a specific video, enter your search terms in the top bar of the page and click the search button.</p>
 	<h4 style = "text-align: center;"> Uploading Files</h4>
@@ -27,7 +29,7 @@
 	<h4 style = "text-align: center;"> Getting Back to the Homepage </h4>
 	<p>At any time, you can click on the "Return to Homepage" button in order to return back to the main page of this website</p>
   </body>
-  
-  		<div style = "text-align:center"><button onclick="window.location.href='video storage.php'" >Return to Homepage</button></div>	
+
+  		<div style = "text-align:center"><button onclick="window.location.href='video storage.php'" >Return to Homepage</button></div>
 
 </html>

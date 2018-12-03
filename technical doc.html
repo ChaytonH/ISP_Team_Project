@@ -12,13 +12,15 @@
   <body style =" background-color:lightgrey;">
 	<div style = " z-index : 1; text-align:center; background-color:white; position: -webkit-sticky; position: sticky; top: 0; ">
 		<img width = "100" src = "Page Essentials\logo.jpg"></img>
-		<input size = "50" id = "search bar" />
-		<button onclick="">Search</button> 
+        <form method="get" action="resultex.php">
+            <input size = "50" name = "searchbar" />
+    		<input type="submit" > <!-- Make this point to a function that takes the input and finds it from our database -->
+        </form>
 		<a href = "instructions.html">Online Help</a><!-- Make this point to a function that takes the input and finds it from our database -->
 	</div>
-	
+
 	<h2 style = "text-align: center;">Online Technical Documentation</h2>
-	
+
 	<h4 style = "text-align: center;"> Group Members and Contributions</h4>
 	<table border="1" style="width:100%"> <!--Main page contents could be here, gathered from the database of course -->
     <tr>
@@ -37,22 +39,22 @@
 		<td>Ryan Douglas</td>
 		<td>Html coding, Css coding, Technical Documentation</td>
 	</tr>
-	
+
 	</table>
-	
+
 	<h4 style = "text-align: center;"> Architecture</h4>
-	
+
 	<p> The architecture was designed to be generally easy to navigate. The homepage can access file uploading, searching, help and this documentation. The homepage is accessable from any other page along with the help section and the search is avalible the same way. This prevents the user from being bottlenecked into any part of the site, making sure that they can always return to the starting point for the site.</p>
-	
+
 	<h4 style = "text-align: center;"> Business Logic</h4>
 	<p> Initially, the database is fully displayed to the homepage using a while function to show the videos and their names and descriptions. When a user searches, the files that have the string searched for are displayed in a similar manner to the homescreen. When uploading a file, the filename and description are added to the database while the file is uploaded to a pausch directory. (Note: due to the way that pausch works, file uploading is currently non functional. Dr. Xaio said he is working on the issue currently.</p>
-	
+
 	<h4 style = "text-align: center;"> Database Design</h4>
-	
+
 	<p> The database only holds the filename and the description of the file added by the user. This is added to through the file upload screen.</p>
-	
+
   </body>
-  
-  		<div style = "text-align:center"><button onclick="window.location.href='video storage.php'" >Return to Homepage</button></div>	
+
+  		<div style = "text-align:center"><button onclick="window.location.href='video storage.php'" >Return to Homepage</button></div>
 
 </html>
