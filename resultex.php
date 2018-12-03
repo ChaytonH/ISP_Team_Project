@@ -32,11 +32,18 @@
 
                 echo "<table border='1' style='width:100%'>";
 
-                while($row = mysqli_fetch_array($result))
-                {
-                    echo "<tr><td><video width ='320' height ='200' controls='controls'><source src='upload/".$row['Name']."'> Your browser does not support the video element</audio></td><td>".$row['Name']."</td><td>".$row['Descript']."</td></tr>";
+                $row = mysqli_fetch_array($result);
+                if ($row) {
+                    while($row)
+                    {
+                        echo "<tr><td><video width ='320' height ='200' controls='controls'><source src='upload/".$row['Name']."'> Your browser does not support the video element</audio></td><td>".$row['Name']."</td><td>".$row['Descript']."</td></tr>";
+                    }
+                    echo "</table>";
                 }
-                echo "</table>";
+                else {
+                    print "No videos found";
+                }
+
 
 
             ?>
